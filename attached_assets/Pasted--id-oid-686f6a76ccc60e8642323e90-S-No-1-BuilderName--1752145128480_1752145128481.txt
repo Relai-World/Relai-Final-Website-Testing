@@ -1,0 +1,382 @@
+{
+  "_id": {
+    "$oid": "686f6a76ccc60e8642323e90"
+  },
+  "S": {
+    "No": 1
+  },
+  "BuilderName": "HALLMARK INFRA HEIGHTS LLP",
+  "ProjectName": "HALLMARK ALTUS",
+  "RERA_Number": "P02400008439",
+  "AreaName": "Kondapur",
+  "PriceSheet": 8999,
+  "Possession_Date": "01/06/29",
+  "google_place_id": "ChIJ11roJHmTyzsRffM8Q0onDSA",
+  "google_place_name": "Hallmark Altus",
+  "google_place_address": "Hallmark Altus, Narne Estate Rd, Narne Estates, Kondapur, Serilingampalle (M), Telangana 500084, India",
+  "google_place_location": {
+    "lat": 17.4843816,
+    "lng": 78.33602800000001
+  },
+  "google_place_rating": 4.6,
+  "google_place_user_ratings_total": 31,
+  "google_maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ11roJHmTyzsRffM8Q0onDSA",
+  "google_place_raw_data": {
+    "business_status": "OPERATIONAL",
+    "formatted_address": "Hallmark Altus, Narne Estate Rd, Narne Estates, Kondapur, Serilingampalle (M), Telangana 500084, India",
+    "geometry": {
+      "location": {
+        "lat": 17.4843816,
+        "lng": 78.33602800000001
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 17.48585897989272,
+          "lng": 78.33759782989272
+        },
+        "southwest": {
+          "lat": 17.48315932010728,
+          "lng": 78.33489817010728
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name": "Hallmark Altus",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1380,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117369072061465288911\">Hallmark Altus</a>"
+        ],
+        "photo_reference": "ATKogpdVqGExF6VRdEu9nBwlqLQE0beHNn-dUh1mrfonsxKwGeX4q_0vBAIdc-2Ha811ekkzLoh83y_J88RG4XdHRJ_fZyChkRAD8FdgvnPXWxcsW3qOgRo_VdOInpkRvEJLk_ncG_vpeNU2WRZvrFCecf_6QrEpHODQkIibEgm-HiitUMpkuBtUcmYlF-3TKIuJ2h0VjDTx4M14hNXK0tNJh_H82dMbOUY1AjDJgLF7o1QhoCjVWUg4QziXmX8TPAm8N5tg1uSf3ejeVs_SgabT9cgP4Z4xtODpNGK5iIbwbr5vCivQDX0",
+        "width": 2401
+      }
+    ],
+    "place_id": "ChIJ11roJHmTyzsRffM8Q0onDSA",
+    "plus_code": {
+      "compound_code": "F8MP+QC Serilingampalle (M), Telangana, India",
+      "global_code": "7J9WF8MP+QC"
+    },
+    "rating": 4.6,
+    "reference": "ChIJ11roJHmTyzsRffM8Q0onDSA",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 31
+  },
+  "hospitals_count": 20,
+  "shopping_malls_count": 20,
+  "schools_count": 20,
+  "restaurants_count": 20,
+  "restaurants_above_4_stars_count": 6,
+  "supermarkets_count": 0,
+  "it_offices_count": 20,
+  "metro_stations_count": 1,
+  "railway_stations_count": 20,
+  "nearest_hospitals": [
+    {
+      "name": "Lakshmi hospital",
+      "rating": 4,
+      "distance": "0.71"
+    },
+    {
+      "name": "Dr.Harika ENT Care Hospitals",
+      "rating": 4,
+      "distance": "1.23"
+    },
+    {
+      "name": "Anu Test Tube Baby Centre",
+      "rating": 4.9,
+      "distance": "1.38"
+    },
+    {
+      "name": "Srikara Hospitals",
+      "rating": 4.6,
+      "distance": "1.54"
+    },
+    {
+      "name": "Healix Hospital",
+      "rating": 4.3,
+      "distance": "1.54"
+    }
+  ],
+  "nearest_shopping_malls": [
+    {
+      "name": "VV Fashion Trendz",
+      "rating": 5,
+      "distance": "0.46"
+    },
+    {
+      "name": "Amin Tailors",
+      "rating": 3.5,
+      "distance": "0.68"
+    },
+    {
+      "name": "iWeaves Boutique",
+      "rating": 4.9,
+      "distance": "0.72"
+    },
+    {
+      "name": "Max",
+      "rating": 2.5,
+      "distance": "1.19"
+    },
+    {
+      "name": "Narra's Elite",
+      "rating": null,
+      "distance": "1.19"
+    }
+  ],
+  "nearest_schools": [
+    {
+      "name": "Maria Montessori Plus",
+      "rating": null,
+      "distance": "0.60"
+    },
+    {
+      "name": "Pragathi Vidyalaya",
+      "rating": 1,
+      "distance": "0.66"
+    },
+    {
+      "name": "SPRING BOARD INTERNATIONAL PRE_SCHOOL, CHANDANAGAR BRANCH",
+      "rating": null,
+      "distance": "0.71"
+    },
+    {
+      "name": "Blue Bird School Chandanagar Branch",
+      "rating": null,
+      "distance": "0.77"
+    },
+    {
+      "name": "Spring Valley An APT Pre School",
+      "rating": null,
+      "distance": "0.78"
+    }
+  ],
+  "nearest_restaurants": [
+    {
+      "name": "Hotel Kinara Grand",
+      "rating": 3.9,
+      "distance": "1.23"
+    },
+    {
+      "name": "Sri Santosh Family Dhaba",
+      "rating": 3.7,
+      "distance": "1.28"
+    },
+    {
+      "name": "GSM Mall & Multiplex",
+      "rating": 4.2,
+      "distance": "1.31"
+    },
+    {
+      "name": "Biryanis and More - Madinaguda",
+      "rating": 4,
+      "distance": "1.33"
+    },
+    {
+      "name": "Shahi Green Bawarchi",
+      "rating": 3.4,
+      "distance": "1.35"
+    }
+  ],
+  "high_rated_restaurants": [
+    {
+      "name": "GSM Mall & Multiplex",
+      "rating": 4.2,
+      "distance": "1.31"
+    },
+    {
+      "name": "Biryanis and More - Madinaguda",
+      "rating": 4,
+      "distance": "1.33"
+    },
+    {
+      "name": "Beijing Bistro",
+      "rating": 4,
+      "distance": "1.97"
+    },
+    {
+      "name": "Hotel Sitara Grand - Miyapur",
+      "rating": 4,
+      "distance": "2.24"
+    },
+    {
+      "name": "KFC",
+      "rating": 4,
+      "distance": "2.42"
+    }
+  ],
+  "nearest_supermarkets": [
+    {
+      "name": "Padmavathi Kirana&general Store's",
+      "rating": 4.5,
+      "distance": "0.41"
+    },
+    {
+      "name": "The Ricebag Godown",
+      "rating": 5,
+      "distance": "0.80"
+    },
+    {
+      "name": "Vijetha Super Market",
+      "rating": 4.1,
+      "distance": "0.89"
+    },
+    {
+      "name": "Sri Aai Mataji Kirana And General Store",
+      "rating": 4.5,
+      "distance": "0.89"
+    },
+    {
+      "name": "RiceDesk.com",
+      "rating": 4.2,
+      "distance": "1.13"
+    }
+  ],
+  "nearest_it_offices": [
+    {
+      "name": "TRAY",
+      "rating": 4.9,
+      "distance": "2.29"
+    },
+    {
+      "name": "TechSophy",
+      "rating": 4.3,
+      "distance": "2.61"
+    },
+    {
+      "name": "Zippr Private Limited",
+      "rating": 4.1,
+      "distance": "2.61"
+    },
+    {
+      "name": "TCS Kohinoor Park",
+      "rating": 4.3,
+      "distance": "4.43"
+    },
+    {
+      "name": "Tata Consultancy Services Limited",
+      "rating": 4.5,
+      "distance": "4.47"
+    }
+  ],
+  "nearest_metro_station": [
+    {
+      "name": "Miyapur",
+      "distance": "4.14"
+    }
+  ],
+  "nearest_railway_station": [
+    {
+      "name": "Chandanagar",
+      "distance": "0.48"
+    },
+    {
+      "name": "Lingampalli",
+      "distance": "1.96"
+    },
+    {
+      "name": "Hafizpet",
+      "distance": "2.88"
+    }
+  ],
+  "nearest_orr_access": [
+    {
+      "name": "Nehru Outer Ring Rd",
+      "distance": "5.90"
+    }
+  ],
+  "connectivity_score": 100,
+  "amenities_score": 100,
+  "amenities_updated_at": "2025-06-27 18:39:52.596606+00",
+  "configurations": [
+    {
+      "type": "4BHK",
+      "facing": "East",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 3270,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 29426730
+    },
+    {
+      "type": "3BHK",
+      "facing": "East",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 2265,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 20382735
+    },
+    {
+      "type": "3BHK",
+      "facing": "East",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 1950,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 17548050
+    },
+    {
+      "type": "3BHK",
+      "facing": "East",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 2975,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 26772025
+    },
+    {
+      "type": "3BHK",
+      "facing": "West",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 2540,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 22857460
+    },
+    {
+      "type": "3BHK",
+      "facing": "West",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 1760,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 15838240
+    },
+    {
+      "type": "3BHK",
+      "facing": "West",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 2975,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 26772025
+    },
+    {
+      "type": "4BHK",
+      "facing": "East",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 4525,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 40720475
+    },
+    {
+      "type": "4BHK",
+      "facing": "West",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 3270,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 29426730
+    },
+    {
+      "type": "4BHK",
+      "facing": "North",
+      "sizeUnit": "Sq ft",
+      "sizeRange": 4685,
+      "sizeRangeSqYard": "",
+      "BaseProjectPrice": 42160315
+    }
+  ]
+}

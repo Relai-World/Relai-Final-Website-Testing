@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20250422-3" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=20250422-3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=20250422-3" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=20250422-3" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png?v=20250422-3" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=20250422-3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20250422-3" />
+    <link rel="manifest" href="/site.webmanifest?v=20250422-3" />
+    <meta name="theme-color" content="#0064FF" />
+    <title>Genuine, Smarter, and End to End Real Estate Services in Hyderabad</title>
+    <meta name="description" content="Discover smarter real estate with Relai. Buy RERA verified properties with expert real estate guidance—all in one place" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Microsoft Clarity Analytics -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rq4bth58f5");
+    </script>
+    
+    <style>
+      /* Basic styles while app loads */
+      body {
+        margin: 0;
+        font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: #f5f5f5;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      .loading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      
+      .loading-text {
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .loading-spinner {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #0064FF;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-container">
+        <h1 class="loading-text">Relai Real Estate Platform</h1>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    
+    <!-- Load React and React DOM from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Load the app through Vite proxy to avoid preamble issues -->
+    <script type="module">
+      // Wait for Vite to be ready
+      const checkVite = async () => {
+        try {
+          const response = await fetch('/src/main.tsx');
+          if (response.ok) {
+            // Vite is ready, load the app
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.src = '/src/main.tsx';
+            document.body.appendChild(script);
+          } else {
+            // Retry after a short delay
+            setTimeout(checkVite, 500);
+          }
+        } catch (error) {
+          // Retry after a short delay
+          setTimeout(checkVite, 500);
+        }
+      };
+      
+      checkVite();
+    </script>
+  </body>
+</html>

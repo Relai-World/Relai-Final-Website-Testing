@@ -1,0 +1,160 @@
+{
+  "_id": {
+    "$oid": "68524a108d33afc1876f0271"
+  },
+  "RERA_Number": "P02200001921",
+  "ProjectName": "4 BLOCKS",
+  "BuilderName": "Beams & Columns Builders Pvt. Ltd.",
+  "Area": "Suchitra",
+  "Possession_date": "01-01-2026",
+  "Price_per_sft": 6840,
+  "configurations": [
+    {
+      "type": "2 BHK",
+      "sizeRange": 1315,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 8994600
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1265,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 8652600
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1310,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 8960400
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1260,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 8618400
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1055,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 7216200
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1360,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 9302400
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1315,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 8994600
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1265,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 8652600
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1270,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 8686800
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1280,
+      "sizeUnit": "Sq ft",
+      "facing": "North",
+      "BaseProjectPrice": 8755200
+    },
+    {
+      "type": "2 BHK",
+      "sizeRange": 1210,
+      "sizeUnit": "Sq ft",
+      "facing": "North",
+      "BaseProjectPrice": 8276400
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1760,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 12038400
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1810,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 12380400
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1575,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 10773000
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1740,
+      "sizeUnit": "Sq ft",
+      "facing": "East",
+      "BaseProjectPrice": 11901600
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1670,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 11422800
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1705,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 11662200
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1790,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 12243600
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1865,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 12756600
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1725,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 11799000
+    },
+    {
+      "type": "3 BHK",
+      "sizeRange": 1815,
+      "sizeUnit": "Sq ft",
+      "facing": "West",
+      "BaseProjectPrice": 12414600
+    }
+  ]
+}
