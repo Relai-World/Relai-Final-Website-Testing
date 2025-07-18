@@ -1,0 +1,76 @@
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ pm2 status
+pm2 logs relai-app --lines 30
+┌────┬──────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id │ name         │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├────┼──────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0  │ relai-app    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 16   │ errored   │ 0%       │ 0b       │ ubuntu   │ disabled │
+└────┴──────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+[TAILING] Tailing last 30 lines for [relai-app] process (change the value with --lines option)
+/home/ubuntu/.pm2/logs/relai-app-out.log last 30 lines:
+/home/ubuntu/.pm2/logs/relai-app-error.log last 30 lines:
+0|relai-ap |     at nextResolve (node:internal/modules/esm/hooks:864:28)
+0|relai-ap |     at resolveBase (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866661351:2:3811)
+0|relai-ap |     at resolveDirectory (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866661351:2:4310)
+0|relai-ap |     at resolveTsPaths (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866661351:2:5051)
+0|relai-ap |     at async resolve (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866661351:2:5422)
+0|relai-ap |     at async nextResolve (node:internal/modules/esm/hooks:864:22)
+0|relai-ap |     at async Hooks.resolve (node:internal/modules/esm/hooks:306:24) {
+0|relai-ap |   code: 'ERR_MODULE_NOT_FOUND'
+0|relai-ap | }
+0|relai-ap |
+0|relai-ap | Node.js v20.19.4
+0|relai-ap |
+0|relai-ap | node:internal/modules/run_main:123
+0|relai-ap |     triggerUncaughtException(
+0|relai-ap |     ^
+0|relai-ap | Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /home/ubuntu/Relai-Final-Website-Testing/server/vite.ts
+0|relai-ap |     at packageResolve (node:internal/modules/esm/resolve:873:9)
+0|relai-ap |     at moduleResolve (node:internal/modules/esm/resolve:946:18)
+0|relai-ap |     at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+0|relai-ap |     at nextResolve (node:internal/modules/esm/hooks:864:28)
+0|relai-ap |     at resolveBase (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866662039:2:3811)
+0|relai-ap |     at resolveDirectory (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866662039:2:4310)
+0|relai-ap |     at resolveTsPaths (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866662039:2:5051)
+0|relai-ap |     at async resolve (file:///usr/lib/node_modules/tsx/dist/esm/index.mjs?1752866662039:2:5422)
+0|relai-ap |     at async nextResolve (node:internal/modules/esm/hooks:864:22)
+0|relai-ap |     at async Hooks.resolve (node:internal/modules/esm/hooks:306:24) {
+0|relai-ap |   code: 'ERR_MODULE_NOT_FOUND'
+0|relai-ap | }
+0|relai-ap |
+0|relai-ap | Node.js v20.19.4
+
+
+
+^C
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ pm2 describe relai-app
+ Describing process with id 0 - name relai-app
+┌───────────────────┬──────────────────────────────────────────────────────────┐
+│ status            │ errored                                                  │
+│ name              │ relai-app                                                │
+│ namespace         │ default                                                  │
+│ version           │ 1.0.0                                                    │
+│ restarts          │ 16                                                       │
+│ uptime            │ 0                                                        │
+│ script path       │ /home/ubuntu/Relai-Final-Website-Testing/server/index.ts │
+│ script args       │ N/A                                                      │
+│ error log path    │ /home/ubuntu/.pm2/logs/relai-app-error.log               │
+│ out log path      │ /home/ubuntu/.pm2/logs/relai-app-out.log                 │
+│ pid path          │ /home/ubuntu/.pm2/pids/relai-app-0.pid                   │
+│ interpreter       │ tsx                                                      │
+│ interpreter args  │ N/A                                                      │
+│ script id         │ 0                                                        │
+│ exec cwd          │ /home/ubuntu/Relai-Final-Website-Testing                 │
+│ exec mode         │ fork_mode                                                │
+│ node.js version   │ N/A                                                      │
+│ node env          │ N/A                                                      │
+│ watch & reload    │ ✘                                                        │
+│ unstable restarts │ 0                                                        │
+│ created at        │ N/A                                                      │
+└───────────────────┴──────────────────────────────────────────────────────────┘
+ Divergent env variables from local env
+
+
+ Add your own code metrics: http://bit.ly/code-metrics
+ Use `pm2 logs relai-app [--lines 1000]` to display logs
+ Use `pm2 env 0` to display environment variables
+ Use `pm2 monit` to monitor CPU and Memory usage relai-app
