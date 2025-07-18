@@ -1,0 +1,96 @@
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ pm2 start ecosystem.config.cjs
+pm2 save
+[PM2][WARN] Applications relai-app not running, starting...
+[PM2] App [relai-app] launched (1 instances)
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ relai-app          │ cluster  │ 0    │ online    │ 0%       │ 39.0mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+[PM2] Saving current process list...
+[PM2] Successfully saved in /home/ubuntu/.pm2/dump.pm2
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ pm2 status
+pm2 logs relai-app --lines 10
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ relai-app          │ cluster  │ 0    │ online    │ 0%       │ 52.1mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+[TAILING] Tailing last 10 lines for [relai-app] process (change the value with --lines option)
+/home/ubuntu/Relai-Final-Website-Testing/logs/out-0.log last 10 lines:
+/home/ubuntu/Relai-Final-Website-Testing/logs/err-0.log last 10 lines:
+0|relai-ap |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+0|relai-ap |     at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+0|relai-ap |     at require (node:internal/modules/helpers:182:18)
+0|relai-ap |     at Object.<anonymous> (/home/ubuntu/Relai-Final-Website-Testing/start-production.cjs:23:17)
+0|relai-ap |     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+0|relai-ap |     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+0|relai-ap |     at Module.load (node:internal/modules/cjs/loader:1275:32)
+0|relai-ap |     at Module._load (node:internal/modules/cjs/loader:1096:12)
+0|relai-ap |     at cjsLoader (node:internal/modules/esm/translators:298:15)
+0|relai-ap |     at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)
+
+^C
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ cat > start-production.mjs << 'EOF'
+import express from 'express';
+import path from 'path';
+import cors from 'cors';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: ['http://13.201.223.222', 'http://localhost:3000', 'http://localhost:5000'],
+  credentials: true
+}));
+
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+
+app.use('/static', express.static(path.join(__dirname, 'client/public')));
+app.use('/property_images', express.static(path.join(__dirname, 'public/property_images')));
+
+app.get('/api/test', (req, res) => {
+  res.json({ message: 'API is working', timestamp: new Date() });
+});
+
+pm2 start ecosystem.config.cjs.log',,tp://13.201.223.222`);on is running!</p>
+[PM2] Applying action restartProcessId on app [relai-app](ids: [ 0 ])
+[PM2] [relai-app](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ relai-app          │ cluster  │ 1    │ online    │ 0%       │ 39.1mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ pm2 status
+pm2 logs relai-app --lines 10
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ relai-app          │ cluster  │ 1    │ online    │ 0%       │ 52.4mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+[TAILING] Tailing last 10 lines for [relai-app] process (change the value with --lines option)
+/home/ubuntu/Relai-Final-Website-Testing/logs/out-0.log last 10 lines:
+/home/ubuntu/Relai-Final-Website-Testing/logs/err-0.log last 10 lines:
+0|relai-ap |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+0|relai-ap |     at Hook._require.Module.require (/usr/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+0|relai-ap |     at require (node:internal/modules/helpers:182:18)
+0|relai-ap |     at Object.<anonymous> (/home/ubuntu/Relai-Final-Website-Testing/start-production.cjs:23:17)
+0|relai-ap |     at Module._compile (node:internal/modules/cjs/loader:1529:14)
+0|relai-ap |     at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+0|relai-ap |     at Module.load (node:internal/modules/cjs/loader:1275:32)
+0|relai-ap |     at Module._load (node:internal/modules/cjs/loader:1096:12)
+0|relai-ap |     at cjsLoader (node:internal/modules/esm/translators:298:15)
+0|relai-ap |     at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:240:7)
+
+^C
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$ curl http://localhost:5000/api/test
+curl: (7) Failed to connect to localhost port 5000 after 0 ms: Couldn't connect to server
+ubuntu@ip-172-31-11-242:~/Relai-Final-Website-Testing$
+
+
+
