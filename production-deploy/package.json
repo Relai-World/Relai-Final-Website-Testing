@@ -1,0 +1,15 @@
+{
+  "name": "relai-production",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node start-production.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.16.2",
+    "axios": "^1.8.4"
+  }
+}
