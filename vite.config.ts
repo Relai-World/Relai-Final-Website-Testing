@@ -1,51 +1,56 @@
-import { defineConfig } from "vite";
+import { defineConfig, PluginOption } from "vite";
 import react from "@vitejs/plugin-react";
 import themePlugin from "@replit/vite-plugin-shadcn-theme-json";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import { fileURLToPath } from 'url';
 
-// Force disable React Fast Refresh to fix preamble error in deployment
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const disableReactRefresh = true;
 
-export default defineConfig({
-  plugins: [
-    disableReactRefresh ? 
-      // Minimal React plugin configuration for deployment
-      {
-        name: 'react-stub',
-        config() {
-          return {
-            esbuild: {
-              jsx: 'automatic',
-              jsxImportSource: 'react'
+export default async function() {
+  const plugins: PluginOption[] = [
+    disableReactRefresh
+      ? {
+          name: 'react-stub',
+          config() {
+            return {
+              esbuild: {
+                jsx: 'automatic',
+                jsxImportSource: 'react'
+              }
             }
           }
         }
-      } :
-      // Full React plugin for development
-      react(),
-    !disableReactRefresh && runtimeErrorOverlay(),
+      : react(),
+    !disableReactRefresh ? runtimeErrorOverlay() : undefined,
     themePlugin(),
-    ...(process.env.NODE_ENV !== "production" &&
+  ];
+
+  if (
+    process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined &&
     !disableReactRefresh
-      ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
-        ]
-      : []),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+  ) {
+    const { cartographer } = await import("@replit/vite-plugin-cartographer");
+    plugins.push(cartographer());
+  }
+
+  return defineConfig({
+    plugins: plugins.filter(Boolean),
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "client", "src"),
+        "@shared": path.resolve(__dirname, "shared"),
+        "@assets": path.resolve(__dirname, "attached_assets"),
+      },
     },
-  },
-  root: path.resolve(import.meta.dirname, "client"),
-  build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
-  },
-});
+    root: path.resolve(__dirname, "client"),
+    build: {
+      outDir: path.resolve(__dirname, "dist/public"),
+      emptyOutDir: true,
+    },
+  });
+}
