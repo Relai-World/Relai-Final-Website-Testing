@@ -4,10 +4,13 @@ import themePlugin from "@replit/vite-plugin-shadcn-theme-json";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { fileURLToPath } from 'url';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 const disableReactRefresh = true;
-export default defineConfig(async () => {
+
+export default async function() {
   const plugins: PluginOption[] = [
     disableReactRefresh
       ? {
@@ -25,6 +28,7 @@ export default defineConfig(async () => {
     !disableReactRefresh ? runtimeErrorOverlay() : undefined,
     themePlugin(),
   ];
+
   if (
     process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined &&
@@ -33,7 +37,8 @@ export default defineConfig(async () => {
     const { cartographer } = await import("@replit/vite-plugin-cartographer");
     plugins.push(cartographer());
   }
-  return {
+
+  return defineConfig({
     plugins: plugins.filter(Boolean),
     resolve: {
       alias: {
@@ -47,5 +52,5 @@ export default defineConfig(async () => {
       outDir: path.resolve(__dirname, "dist/public"),
       emptyOutDir: true,
     },
-  };
-});
+  });
+}
