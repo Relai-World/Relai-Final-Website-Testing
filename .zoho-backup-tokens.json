@@ -2,13 +2,6 @@
   {
     "access_token": "1000.871a34732549243dfca3c5e4f2389caf.1e3d47e40f3d1366ff901af9ab87d5fb",
     "refresh_token": "1000.e174113a40cec8601d4f9c2487c49c12.8b58c5359519534b868ce2a8c35c25b7",
-    "created_at": 1752917534991,
-    "expires_at": 1752921134991,
-    "label": "manual_2025-07-19T09:38:58.481Z"
-  },
-  {
-    "access_token": "1000.871a34732549243dfca3c5e4f2389caf.1e3d47e40f3d1366ff901af9ab87d5fb",
-    "refresh_token": "1000.e174113a40cec8601d4f9c2487c49c12.8b58c5359519534b868ce2a8c35c25b7",
     "created_at": 1752917938481,
     "expires_at": 1752921538481,
     "label": "manual_2025-07-19T09:39:19.097Z"
@@ -103,5 +96,12 @@
     "created_at": 1752918692915,
     "expires_at": 1752922292915,
     "label": "manual_2025-07-19T09:54:01.530Z"
+  },
+  {
+    "access_token": "1000.871a34732549243dfca3c5e4f2389caf.1e3d47e40f3d1366ff901af9ab87d5fb",
+    "refresh_token": "1000.e174113a40cec8601d4f9c2487c49c12.8b58c5359519534b868ce2a8c35c25b7",
+    "created_at": 1752918841531,
+    "expires_at": 1752922441531,
+    "label": "manual_2025-07-19T09:55:54.666Z"
   }
 ]
